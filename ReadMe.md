@@ -63,7 +63,7 @@ More information:
 - to stop the containers: docker-compose down
 
 
-## If I want to use my own adaptation method
+## And if I want to use my own adaptation method?
 
 If you want to create your own adaptation rule, it's important to know that ./client folder has a copy of the dash.js player which you can use to test you adaptation method. In order to create new adaptation rules you need to add them into ./client/app/rules folder. In order to define which adaptation method the client will use you just need to define it into ./client/index.html file as in this example where I'm defining the Smoothed Throughput Method:
 
