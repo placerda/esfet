@@ -1,0 +1,20 @@
+{
+  "name": "metrics",
+  "version": "1.0.0",
+  "description": "Metrics Service",
+  "author": "Paulo Lacerda",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bunyan": "1.8.12",
+    "connect-redis": "^3.3.3",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "5.0.1",
+    "express": "^4.16.1",
+    "express-session": "^1.15.6",
+    "influx": "^5.0.7",
+    "redis": "^2.8.0"
+  }
+}

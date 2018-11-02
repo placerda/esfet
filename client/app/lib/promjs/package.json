@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "promjs",
+        "scope": null,
+        "escapedName": "promjs",
+        "name": "promjs",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/paulo/Dropbox/uff/placerda/source/mydash.js"
+    ]
+  ],
+  "_from": "promjs@latest",
+  "_id": "promjs@0.3.0",
+  "_inCache": true,
+  "_location": "/promjs",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/promjs-0.3.0.tgz_1490822981423_0.4375983017962426"
+  },
+  "_npmUser": {
+    "name": "jpellizzari",
+    "email": "jordan.pellizzari@gmail.com"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "promjs",
+    "scope": null,
+    "escapedName": "promjs",
+    "name": "promjs",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/promjs/-/promjs-0.3.0.tgz",
+  "_shasum": "4c7348602f11f14ec706fedbbf79c4d0ea2e44c0",
+  "_shrinkwrap": null,
+  "_spec": "promjs",
+  "_where": "/Users/paulo/Dropbox/uff/placerda/source/mydash.js",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "description": "A Prometheus metrics registry implemented in JavaScript",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-register": "^6.24.0",
+    "eslint": "^3.18.0",
+    "eslint-plugin-import": "^2.2.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "4c7348602f11f14ec706fedbbf79c4d0ea2e44c0",
+    "tarball": "https://registry.npmjs.org/promjs/-/promjs-0.3.0.tgz"
+  },
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "jpellizzari",
+      "email": "jordan.pellizzari@gmail.com"
+    }
+  ],
+  "name": "promjs",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "build": "babel src --out-dir lib && cp package.json README.md ./lib",
+    "lint": "eslint src test",
+    "push": "cd lib && npm login && npm publish && git push --set-upstream origin master --follow-tags",
+    "release": "yarn lint && yarn test && yarn version && yarn build && yarn push",
+    "test": "mocha"
+  },
+  "version": "0.3.0"
+}
