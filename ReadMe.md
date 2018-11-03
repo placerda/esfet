@@ -62,6 +62,20 @@ More information:
 
 - to stop the containers: docker-compose down
 
+## Choosing between local and internet media storage
+
+If you want to run your tests using local media files you just need to store DASH manifest and the media files in the ./client/media folder, as can be seen here:
+
+![Using Local Media Files](docs/local_media.png?raw=true "Using Local Media Files")
+
+Then change url of the manifest file in this part of the ./client/app/main.js source file:
+
+![Changing Manifest File](docs/changing_manifest.png?raw=true "Changing Manifest File")
+
+Here is a sample of Big Buck Bunny files you can use to do your tests locally:
+
+https://www.dropbox.com/s/63ucebayyi3bbsz/bbb_30fps.zip
+
 
 ## And if I want to use my own adaptation method?
 

@@ -27,14 +27,15 @@ angular.module('DashContributorsService', ['ngResource']).factory('contributors'
 
 app.controller('DashController', function ($scope, sources, contributors) {
 
-    // $scope.selectedItem = {
-    //     url: "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd"
-    // };
-
-    //placerda - define local test media
+    //placerda - comment this part if you want to use local media files
     $scope.selectedItem = {
-        url: "/media/bbb_30fps.mpd"
+        url: "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd"
     };
+
+    //placerda - uncomment this part if you want to use local media files
+    // $scope.selectedItem = {
+    //     url: "/media/bbb_30fps.mpd"
+    // };
 
     sources.query(function (data) {
         $scope.availableStreams = data.items;
