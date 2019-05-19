@@ -1,4 +1,4 @@
-FROM node:8.10.0
+FROM node:8.10.0-stretch
 
 # instala python para o node-gyp utilizado pelo bunyan
 RUN apt-get update && \
